@@ -28,6 +28,6 @@ public class CalculationTest {
             // Hàm getPath() sẽ chuyển đổi đường dẫn theo HĐH đang chạy:
             // - Linux/macOS: trả về "src/main" (Khớp -> Test Xanh)
             // - Windows: trả về "src\main" (Không khớp -> Test Đỏ)
-        Assertions.assertEquals(folder + File.separator + file, fileObj.getPath());
+        Assertions.assertEquals(folder + File.separator + file, pathString);
         }
 }
